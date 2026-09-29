@@ -8,7 +8,7 @@ Domain: a metadata assistant for scientific papers, inspired by platforms like I
 
 - **Stage 1** — Basic Anthropic API call: request/response structure, message format, content blocks
 - **Stage 2** — Tool calling: defining tools, detecting `tool_use` responses, executing functions locally, returning `tool_result` messages
-- **Stage 3** — Agentic loop: the model chains multiple tool calls autonomously until it can answer *(coming soon)*
+- **Stage 3** — Agentic loop: the model chains multiple tool calls autonomously until it can answer
 
 ## Concepts covered
 
@@ -17,7 +17,7 @@ Domain: a metadata assistant for scientific papers, inspired by platforms like I
 | `messages` array and conversation history | `stage1_basic.py` |
 | Tool definitions with JSON Schema | `stage2_tools.py` → `TOOLS` |
 | `tool_use` / `tool_result` message flow | `stage2_tools.py` → `run_with_tools()` |
-| Multi-step autonomous reasoning | `stage3_agent.py` *(coming soon)* |
+| Multi-step autonomous reasoning | `stage3_agent.py` → `run_agent()` |
 
 ## Setup
 
@@ -39,7 +39,7 @@ cp .env.example .env
 ```bash
 python stage1_basic.py   # basic API call
 python stage2_tools.py   # tool calling
-python stage3_agent.py   # agentic loop (coming soon)
+python stage3_agent.py   # agentic loop
 ```
 
 ## Stack
