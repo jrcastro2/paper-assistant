@@ -1,3 +1,4 @@
+from types import ModuleType
 from typing import Callable
 
 TOOLS = [
@@ -37,7 +38,7 @@ TOOLS = [
 ]
 
 
-def make_tool_functions(module) -> dict[str, Callable]:
+def make_tool_functions(module: ModuleType) -> dict[str, Callable]:
     """Build the tool dispatch table from a data module."""
     return {
         "search_papers": module.search_papers,

@@ -9,7 +9,7 @@ load_dotenv()
 SOURCES = ("mock", "inspire")
 
 parser = argparse.ArgumentParser(description="Scientific paper metadata assistant")
-parser.add_argument("--source", choices=SOURCES, default="inspire", help="Data source (default: inspire)")
+parser.add_argument("--source", choices=SOURCES, default="inspire", help="Data source: mock (local) or inspire (live API), default: inspire")
 parser.add_argument("question", nargs="?", default="Find the most cited paper about neutrino oscillations and tell me its full details.")
 args = parser.parse_args()
 
